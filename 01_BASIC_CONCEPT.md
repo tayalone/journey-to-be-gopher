@@ -170,3 +170,50 @@ func swapper(f int, s string) (string, int) {
 	return s, f
 }
 ```
+
+### Condition
+
+การใช้ If/Else ทำ Condtion ในภาษา Go นั้นเหมือนกับภาษาโปรแกรมมิ่งอื่นๆ ต่างแค่เพียงไม่ต้องใส่วงเว็บที่ If Statement
+
+ตัวอย่าง
+
+```go
+func main() {
+	a := 10
+	if a < 0 {
+		fmt.Println("Negative")
+	} else if a == 0 {
+		fmt.Println("Zero")
+	} else {
+		fmt.Println("Positive")
+	}
+}
+
+```
+
+แต่มีสิ่งหนึ่งที่แปลกกว่าภาษาอื่นคือ Go ยอมให้มี Statement ก่อนหน้าอยู่ใน If ได้ พูดแล้วอาจจะงงไปดูตัวแย่าง Code กัน
+
+ตัวอย่าง ( แบบ Gopher ) ⭐⭐⭐
+
+```go
+func isOddNum(n int) bool {
+	if n == 1 || n == 2 || n%2 == 1 {
+		return true
+	}
+	return false
+}
+
+func main() {
+	/*
+		isOdd := isOddNum(1)
+		if isOdd {
+			....
+		}
+	*/
+	if isOdd := isOddNum(1); isOdd {
+		fmt.Println("is Odd Number")
+	} else {
+		fmt.Println("is Even Number")
+	}
+}
+```
