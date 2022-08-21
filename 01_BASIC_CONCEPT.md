@@ -224,7 +224,7 @@ func main() {
 
 ### For ทั่วไป
 
-```
+```go
 
 func main() {
 	for i := 0; i < 10; i++ {
@@ -237,12 +237,24 @@ func main() {
 
 ### Loop While
 
-```
+```go
 func main() {
 	i := 0
 	for i < 10 {
 		// do somthing in loop
 		// // i + 1 when do some job
+	}
+}
+```
+
+### Infinite Loop
+
+```go
+func main() {
+	for {
+		// do somthing in loop
+		// break when job done
+		break
 	}
 }
 ```
