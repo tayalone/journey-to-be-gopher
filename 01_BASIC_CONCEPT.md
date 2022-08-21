@@ -217,3 +217,32 @@ func main() {
 	}
 }
 ```
+
+### Loop
+
+ในภาษา Go ต่างจากภาษาอื่นในการสร้าง Loop คือมีค่า Keyword `for` ให้ใช้เท่านั้นโดยแบ่งการ Loop เป็น 3 แบบ ได้แก่
+
+### For ทั่วไป
+
+```
+
+func main() {
+	for i := 0; i < 10; i++ {
+		// do somthing in loop
+	}
+}
+
+
+```
+
+### Loop While
+
+```
+func main() {
+	i := 0
+	for i < 10 {
+		// do somthing in loop
+		// // i + 1 when do some job
+	}
+}
+```
